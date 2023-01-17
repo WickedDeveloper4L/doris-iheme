@@ -1,6 +1,5 @@
-import { FaHtml5, FaCss3, FaNodeJs, FaReact, FaSass, FaFigma, FaPhoneAlt, FaUser, FaMapMarkerAlt, FaPaperPlane,  FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
-import { DiJavascript } from "react-icons/di";
-import { SiTypescript, SiNextdotjs, SiGithub, SiRedux, SiGraphql } from "react-icons/si";
+import {FaVuejs, FaNodeJs, FaReact, FaSass, FaFigma, FaPhoneAlt, FaUser, FaMapMarkerAlt, FaPaperPlane,  FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { SiTypescript, SiNextdotjs, SiGithub, SiRedux, SiGraphql, SiFirebase, SiGatsby } from "react-icons/si";
 import work1 from "./assets/work1.png";
 import work2 from "./assets/work2.png";
 import work3 from "./assets/work3.png";
@@ -38,9 +37,9 @@ export const bios = [
   }
 ]
 
-export const icons = [<FaHtml5 />, <FaCss3 />, <DiJavascript />,
- <SiTypescript />, <FaReact />, <FaNodeJs />, <FaSass />,
-  <FaFigma />, <SiNextdotjs/>, <SiGithub/>, <SiRedux/>, <SiGraphql/>]
+export const icons = [ <FaReact />, <SiNextdotjs/>, <SiGatsby />, <FaVuejs />, <SiFirebase />,
+ <SiTypescript />, <FaNodeJs />, <FaSass />,
+  <FaFigma />, <SiGithub/>, <SiRedux/>, <SiGraphql/>]
 
 export const experiences = [
   {

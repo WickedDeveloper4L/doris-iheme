@@ -3,7 +3,7 @@ import "./About.scss";
 
 import { motion } from 'framer-motion';
 import { bios } from '../../../Data';
-import portfolio from "../../../assets/portfolio.jpg"
+import portfolio from "../../../assets/portfolio.png"
 import RESUME from '../../../assets/ChrisKleine_Resume.pdf'
 const About = () => {
 
@@ -27,7 +27,7 @@ const About = () => {
           transition={{ duration: 1 }}
           className="about_left">
           <motion.img src={portfolio}
-            whileHover={{ y: -48, x: -55 }}
+            
             transition={{ duration: 0.3 }}
           />
         </motion.div>

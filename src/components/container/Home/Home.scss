@@ -16,7 +16,6 @@
         }
     }
     .profile_text {
-        margin-top: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -25,7 +24,10 @@
         h3 {
             color: #fff;
             font-size: 2rem;
-            @media screen and (max-width: 500px) {
+            @media screen and (max-width: 800px) {
+                font-size: 2rem;
+            }
+            @media screen and (max-width: 530px) {
                 font-size: 1.5rem;
             }
             span {
@@ -48,6 +50,7 @@
                 padding-left: 2rem;
                 padding-right: 2rem;
                 font-size: 5rem;
+                font-weight: 600;
                 color: #8c12f0;
                 @media screen and (max-width: 800px) {
                     font-size: 3.5rem;

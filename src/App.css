@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    user-select: none;
 }
 body {
     background: #131212;
@@ -50,3 +51,46 @@ img {
         font-size: 2.5rem;
     }
 }
+
+.application{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.h1{
+    font-size: 5rem;
+    font-weight: 600;
+    color: #ffffff;
+
+   
+}
+ @media screen and (max-width: 800px) {
+        .h1{
+            font-size: 2rem;
+        }
+}
+@media screen and (max-width: 530px) {
+        .h1{
+            font-size: 1.5rem;
+        }
+}
+
+.typewriter{
+    font-size: 5rem;
+    font-weight: 600;
+    color: #8c12f0;
+}
+@media screen and (max-width: 800px) {
+        .typewriter{
+            font-size: 2rem;
+        }
+    }
+    @media screen and (max-width: 530px) {
+        .typewriter{
+            font-size: 1.5rem;
+        }
+    }
