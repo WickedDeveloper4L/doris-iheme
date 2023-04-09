@@ -1,20 +1,19 @@
-import React from 'react'
+import React from "react";
 import "./About.scss";
 
-import { motion } from 'framer-motion';
-import { bios } from '../../../Data';
-import portfolio from "../../../assets/portfolio.png"
-import RESUME from '../../../assets/ChrisKleine_Resume.pdf'
+import { motion } from "framer-motion";
+import { bios } from "../../../Data";
+import portfolio from "../../../assets/chrisportrait.jpg";
+import RESUME from "../../../assets/chris Resume.pdf";
 const About = () => {
-
-
   return (
-    <div className="container " id='about'>
+    <div className="container " id="about">
       <motion.div
         initial={{ opacity: 0 }}
         viewport={{ once: true }}
         whileInView={{ y: [-50, 0], opacity: 1 }}
-        className="title">
+        className="title"
+      >
         <span>Who Am I?</span>
         <h1>About Me</h1>
       </motion.div>
@@ -25,46 +24,51 @@ const About = () => {
           viewport={{ once: true }}
           whileInView={{ x: [-250, 0], opacity: 1 }}
           transition={{ duration: 1 }}
-          className="about_left">
-          <motion.img src={portfolio}
-            
-            transition={{ duration: 0.3 }}
-          />
+          className="about_left"
+        >
+          <motion.img src={portfolio} transition={{ duration: 0.3 }} />
         </motion.div>
-        <motion.div className="about_right"
+        <motion.div
+          className="about_right"
           initial={{ x: 0, opacity: 0 }}
           viewport={{ once: true }}
           whileInView={{ x: [250, 0], opacity: 1 }}
           transition={{ duration: 1 }}
         >
-
-          <p>Hello! I'm Kleine. I am obsessed with creating super 
-          optimized and productive applications that brings real value to the society. 
-          <br/>
-          I am currently focused in Frontend Development, Building and improving web apps, optimizing and re-architecting applications.
-          <br/>
-          I am currently working freelance and open to work remotely or collaborate in valuable projects!
+          <p>
+            Hello! I'm Kleine. I am obsessed with creating super optimized and
+            productive applications that brings value to the society and have
+            the potential to help in my all-round development as a better
+            person.
+            <br />
+            I am currently focused on Frontend Web Development, Building and
+            improving web apps, optimizing and re-architecting applications.
+            <br />I work freelance and I am open to work remotely or collaborate
+            in valuable projects.
           </p>
-          {bios.map(bio => {
+          {bios.map((bio) => {
             return (
               <div className="bio" key={bio.id}>
-                <span className='bioKey'>{bio.icon}{bio.key}</span>
-                <span className='bioValue'>{bio.value}</span>
+                <span className="bioKey">
+                  {bio.icon}
+                  {bio.key}
+                </span>
+                <span className="bioValue">{bio.value}</span>
               </div>
-            )
+            );
           })}
-          <motion.a href={RESUME} download
+          <motion.a
+            href={RESUME}
+            target="_blank"
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
           >
-            Download Resume
+            View Resume
           </motion.a>
         </motion.div>
-
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
