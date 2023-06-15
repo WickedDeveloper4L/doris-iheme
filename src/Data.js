@@ -1,5 +1,4 @@
-import {FaVuejs, FaNodeJs, FaReact, FaSass, FaFigma, FaPhoneAlt, FaUser, FaMapMarkerAlt, FaPaperPlane,  FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
-import { SiTypescript, SiNextdotjs, SiGithub, SiRedux, SiGraphql, SiFirebase, SiGatsby } from "react-icons/si";
+import { FaPhoneAlt, FaUser, FaMapMarkerAlt, FaPaperPlane,  FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp, FaInstagramSquare, FaFacebookSquare, FaFacebookMessenger } from "react-icons/fa";
 import work1 from "./assets/work1.png";
 import work2 from "./assets/work2.png";
 import work3 from "./assets/work3.png";
@@ -7,13 +6,13 @@ import work4 from "./assets/work4.png";
 import work5 from "./assets/work5.png";
 import work6 from "./assets/work6.png";
 
-export const navLinks = ["home", "about", "skills", "portfolio", "contact"]
+export const navLinks = ["home", "about", "skills", "contact"]
 
 export const socialIcons = [
   <a title='Follow me on Instagram' href="https://www.instagram.com/kleinedev/" target="_blank" rel="noreferrer"><FaInstagram /></a>,
   <a title='Connect with me on LinkedIn' href="https://www.linkedin.com/in/kleine-ahia-235463248/" target="_blank" rel="noreferrer"><FaLinkedin /></a>,
   <a title='Follow me on Twitter' href="https://twitter.com/kleinedev" target="_blank" rel="noreferrer"><FaTwitter/></a>,
-  <a title="Let's discuss on whatsapp" href="https://wa.me/2347010909982?text=Hello___" target="_blank" rel="noreferrer"><FaWhatsapp/></a>
+  <a title="Let's discuss on whatsapp" href="https://wa.me/2348157474347?text=Hello___" target="_blank" rel="noreferrer"><FaWhatsapp/></a>
 ]
 
 export const bios = [
@@ -21,44 +20,36 @@ export const bios = [
     id: 1,
     icon: <FaUser />,
     key: "Name",
-    value: "Chris Kleine"
+    value: "Iheme Doris Eziaku"
   },
   {
     id: 2,
     icon: <FaPhoneAlt />,
     key: "Phone",
-    value: "+2347010909982"
+    value: "+2348157474347"
   },
   {
     id: 3,
     icon: <FaPaperPlane />,
     key: "Email",
-    value: "chriskleine433@gmail.com"
+    value: "dorisiheme14@gmail.com"
   }
 ]
 
-export const icons = [ <FaReact />, <SiNextdotjs/>, <SiGatsby />, <FaVuejs />, <SiFirebase />,
- <SiTypescript />, <FaNodeJs />, <FaSass />,
-  <FaFigma />, <SiGithub/>, <SiRedux/>, <SiGraphql/>]
+export const icons = [ <FaInstagramSquare/>, <FaTwitter/>, <FaLinkedin/>, <FaFacebookSquare/>, <FaWhatsapp/>, <FaFacebookMessenger/>]
 
 export const experiences = [
   {
     id: 1,
-    year: "2022",
-    position: "Frontend Web-Developer",
-    company: "Colette-rocks"
+    year: "2022 - present",
+    position: "Social media Manager",
+    company: "ACE-FUELS"
   },
   {
     di: 2,
-    year: "2021",
-    position: "Frontend Web-Developer",
-    company: "Seyi&Kris"
-  },
-  {
-    id: 3,
-    year: "2019",
-    position: "Freelance Web Dveloper",
-    company: "Fiverr"
+    year: "2019 - 2023",
+    position: "Personal Assistant",
+    company: "FUTO"
   }
 ]
 export const finishes = [
@@ -136,11 +127,11 @@ export const contacts = [
   {
     id: 2,
     icon: <FaPaperPlane />,
-    infoText: "chriskleine433@gmail.com"
+    infoText: "dorisiheme14@gmail.com"
   },
   {
     id: 3,
     icon: <FaPhoneAlt />,
-    infoText: "+234-701-090-9982"
+    infoText: "+234-815-747-4347"
   }
 ]

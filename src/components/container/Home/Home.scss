@@ -1,90 +1,88 @@
 #home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 7rem 1.5rem 0 1.5rem;
+
+ 
+  .profile_text {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    position: relative;
 
-    .profile {
-        width: 110px;
-        height: 110px;
-
-        img {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-        }
+    h3 {
+      color: #fff;
+      font-size: 2rem;
+      text-align: center;
+      @media screen and (max-width: 800px) {
+        font-size: 2rem;
+      }
+      @media screen and (max-width: 530px) {
+        font-size: 1.5rem;
+      }
+      span {
+        color:  #b87333;
+        font-size: 2.7rem;
+        font-weight: 700;
+      }
     }
-    .profile_text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
+    .job {
+      color: #fff;
+      opacity: 0.5;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+    .text {
+      margin-top: 2rem;
+      color: #fff;
+      text-align: center;
+      font-size: 5rem;
+      line-height: 1.3;
 
-        h3 {
-            color: #fff;
-            font-size: 2rem;
-            @media screen and (max-width: 800px) {
-                font-size: 2rem;
-            }
-            @media screen and (max-width: 530px) {
-                font-size: 1.5rem;
-            }
-            span {
-                color: #8c12f0;
-            }
+      .alive {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 5rem;
+        font-weight: 600;
+        color:  #b87333;
+        @media screen and (max-width: 800px) {
+          font-size: 2.5rem;
+          margin-top: 2rem;
         }
-        .job {
-            color: #fff;
-            opacity: 0.5;
-            font-size: 0.85rem;
+        @media screen and (max-width: 530px) {
+          font-size: 2rem;
         }
-        .text {
-            margin-top: 2rem;
-            color: #fff;
-            text-align: center;
-            font-size: 5rem;
-            line-height: 1.3;
-
-            .alive{
-                padding-left: 2rem;
-                padding-right: 2rem;
-                font-size: 5rem;
-                font-weight: 600;
-                color: #8c12f0;
-                @media screen and (max-width: 800px) {
-                    font-size: 3.5rem;
-                     margin-top: 2rem;
-                }
-                @media screen and (max-width: 530px) {
-                    font-size: 2.5rem;
-                }
-            }
-            @media screen and (max-width: 800px) {
-                font-size: 3.5rem;
-                 margin-top: 2rem;
-            }
-            @media screen and (max-width: 530px) {
-                font-size: 2.5rem;
-            }
-        }
-                a {
-                    text-decoration: none;
-                    color: rgb(255, 255, 255);
-                    text-transform: capitalize;
-                    text-align: center;
-                    border: 2px solid #8c12f0;
-                    padding: 0.75rem 2rem;
-                    font-size: 0.85rem;
-                    margin-top: 2rem;
-                }
-       
-        @media screen  and (max-width: 800px) {
-            div {
-                display: none;
-            }
-        }
-        
+      }
+      @media screen and (max-width: 800px) {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+      }
+      @media screen and (max-width: 530px) {
+        font-size: 2rem;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      text-transform: capitalize;
+      text-align: center;
+      border: 2px solid  #b87333;
+      padding: 0.75rem 2rem;
+      font-size: 0.85rem;
+      margin-top: 2rem;
     }
 
+    @media screen and (max-width: 800px) {
+      div {
+        display: none;
+      }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    padding: 2rem 1.5rem 0 1.5rem;
+  }
 }

@@ -19,7 +19,7 @@ const Home = () => {
 
 
   return (
-    <motion.div className="container " id='home'
+    <motion.div  id='home'
       initial={{ y: -15, opacity: 0 }}
       viewport={{ once: true }}
       animate={{ y: 0, opacity: 1 }}
@@ -32,8 +32,8 @@ const Home = () => {
     >
      
       <div className="profile_text">
-        <h3 className='name'>Hello, I'm  <span>Chris kleine</span> </h3>
-        <span className='job'>Web Developer based in Lagos, Nigeria.</span>
+        <h3 className='name'>Hello there👋, I'm  <br/><span>Iheme Doris Eziaku</span> </h3>
+        <span className='job'>Content creator & Social media manager based in Lagos, Nigeria.</span>
         <span className='text'>I Make Ideas<br /> come 
         <motion.span
               initial={{opacity: 0.1}}

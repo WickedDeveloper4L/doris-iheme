@@ -25,7 +25,7 @@ const Skills = () => {
       >
         <button
           onClick={() => setActive(1)}
-          className={active === 1 ? "active" : ""}>Skills</button>
+          className={active === 1 ? "active" : ""}>Tools & Skills</button>
         <button
           onClick={() => setActive(2)}
           className={active === 2 ? "active" : ""}

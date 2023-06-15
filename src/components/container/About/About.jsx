@@ -2,7 +2,6 @@ import React from "react";
 import "./About.scss";
 
 import { motion } from "framer-motion";
-import { bios } from "../../../Data";
 import portfolio from "../../../assets/chrisportrait.jpg";
 import RESUME from "../../../assets/chris Resume.pdf";
 const About = () => {
@@ -36,27 +35,9 @@ const About = () => {
           transition={{ duration: 1 }}
         >
           <p>
-            Hello! I'm Kleine. I am obsessed with creating super optimized and
-            productive applications that brings value to the society and have
-            the potential to help in my all-round development as a better
-            person.
-            <br />
-            I am currently focused on Frontend Web Development, Building and
-            improving web apps, optimizing and re-architecting applications.
-            <br />I work freelance and I am open to work remotely or collaborate
-            in valuable projects.
+          Hello, I'm a versatile professional experienced in social media management, graphics design, content creation, and event planning. With expertise in crafting engaging online presence, designing captivating visuals, producing compelling content, and orchestrating memorable events, I bring innovative solutions and a keen eye for detail to every project. I thrive on creating meaningful connections and exceeding expectations, and I invite you to explore my portfolio and collaborate on bringing your visions to life.
           </p>
-          {bios.map((bio) => {
-            return (
-              <div className="bio" key={bio.id}>
-                <span className="bioKey">
-                  {bio.icon}
-                  {bio.key}
-                </span>
-                <span className="bioValue">{bio.value}</span>
-              </div>
-            );
-          })}
+
           <motion.a
             href={RESUME}
             target="_blank"

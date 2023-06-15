@@ -1,96 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    user-select: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  user-select: none;
 }
 body {
-    background: #131212;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 500;
+  background: #000000;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 500;
 }
-input{
-    font-family: 'Roboto Mono', monospace; 
+input {
+  font-family: 'Montserrat Alternates', sans-serif;
 }
-button{
-    font-family: 'Roboto Mono', monospace;
+button {
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 img {
-    width: 100%;
+  width: 100%;
 }
 .container {
-    max-width:1224px;
-    min-height: 100vh;
-    padding: 7rem 1.5rem 0 1.5rem;
-    margin: 0 auto;
+  max-width: 1224px;
+  min-height: 100vh;
+  padding: 7rem 1.5rem 0 1.5rem;
+  margin: 0 auto;
 }
 
 .title {
-    text-align: center;
-    margin-bottom: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 .title span {
-    color: #8c12f0;
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    font-weight: 800;
-    letter-spacing: 5px;
+  color:  #b87333;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 5px;
 }
 .title h1 {
-    color: #fff;
-    font-size: 3rem;
-    position: relative;
+  color: #fff;
+  font-size: 3rem;
+  position: relative;
 }
 @media screen and (max-width: 500px) {
-    .container {
-        padding: 7rem 1rem 0 1rem;
-    }
-    .title h1 {
-        font-size: 2.5rem;
-    }
+  .container {
+    padding: 7rem 1rem 0 1rem;
+  }
+  .title h1 {
+    font-size: 2.5rem;
+  }
 }
 
-.application{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
+.application {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 
-
-.h1{
-    font-size: 5rem;
-    font-weight: 600;
-    color: #ffffff;
-
-   
-}
- @media screen and (max-width: 800px) {
-        .h1{
-            font-size: 2rem;
-        }
-}
-@media screen and (max-width: 530px) {
-        .h1{
-            font-size: 1.5rem;
-        }
-}
-
-.typewriter{
-    font-size: 5rem;
-    font-weight: 600;
-    color: #8c12f0;
+.h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  color: #ffffff;
 }
 @media screen and (max-width: 800px) {
-        .typewriter{
-            font-size: 2rem;
-        }
-    }
-    @media screen and (max-width: 530px) {
-        .typewriter{
-            font-size: 1.5rem;
-        }
-    }
+  .h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 530px) {
+  .h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.typewriter {
+  font-size: 5rem;
+  font-weight: 600;
+  color:  #b87333;
+  width: 70%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 800px) {
+  .typewriter {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 530px) {
+  .typewriter {
+    font-size: 1.5rem;
+  }
+}
