@@ -2,8 +2,7 @@ import React from "react";
 import "./About.scss";
 
 import { motion } from "framer-motion";
-import portfolio from "../../../assets/chrisportrait.jpg";
-import RESUME from "../../../assets/chris Resume.pdf";
+import RESUME from "../../../assets/Doris resume.pdf";
 const About = () => {
   return (
     <div className="container " id="about">
@@ -25,7 +24,7 @@ const About = () => {
           transition={{ duration: 1 }}
           className="about_left"
         >
-          <motion.img src={portfolio} transition={{ duration: 0.3 }} />
+        <div className="img"></div>
         </motion.div>
         <motion.div
           className="about_right"
