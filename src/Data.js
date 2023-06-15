@@ -55,23 +55,23 @@ export const experiences = [
 export const finishes = [
   {
     id: 1,
-    number: '3+',
+    number: '5+',
     itemName: "Years Of Experience"
   },
   {
     id: 2,
     number: "50+",
-    itemName: "Satisfied Customers"
+    itemName: "Satisfied Clients"
   },
   {
     id: 3,
     number: "70+",
-    itemName: "Designed Items"
+    itemName: "Projects"
   },
   {
     id: 4,
-    number: "50+",
-    itemName: "Clients Served"
+    number: "100+",
+    itemName: "Contents created"
   }
 ]
 export const workImages = [
