@@ -1,11 +1,8 @@
 import { FaPhoneAlt, FaUser, FaMapMarkerAlt, FaPaperPlane,  FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp, FaInstagramSquare, FaFacebookSquare, FaFacebookMessenger } from "react-icons/fa";
-import work1 from "./assets/work1.png";
+import work1 from "./assets/ace.jpg";
 import {SiAdobephotoshop} from 'react-icons/si'
-import work2 from "./assets/work2.png";
-import work3 from "./assets/work3.png";
 import work4 from "./assets/work4.png";
 import work5 from "./assets/work5.png";
-import work6 from "./assets/work6.png";
 
 export const navLinks = ["home", "about", "skills", "contact"]
 
@@ -79,43 +76,28 @@ export const workImages = [
     id: 1,
     img: work1,
     name: "project 1",
-    category: "web"
-  },
-  {
-    id: 2,
-    img: work2,
-    name: "project 2",
-    category: "web"
-  },
-  {
-    id: 3,
-    img: work3,
-    name: "project 3",
-    category: "web"
+    category: "social",
+    link: "https://www.facebook.com/acefuelsfutonig/"
   },
   {
     id: 4,
     img: work4,
     name: "project 4",
-    category: "app"
+    category: "design",
+    link: "#"
   },
   {
     id: 5,
     img: work5,
     name: "project 5",
-    category: 'app'
-  },
-  {
-    id: 6,
-    img: work6,
-    name: "project 6",
-    category: "design"
+    category: 'design',
+    link: "#"
   }
 ]
 
 
 export const workNavs = [
-  "All", "Web", "App", "Design"
+  "All", "Social", "Design"
 ]
 
 export const contacts = [

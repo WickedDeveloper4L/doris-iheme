@@ -7,6 +7,7 @@ import Home from "./components/container/Home/Home";
 import Skills from "./components/container/Skills/Skills";
 import Navbar from "./components/Navbar/Navbar";
 import { Typewriter } from "react-simple-typewriter";
+import Portfolio from "./components/container/Portfolio/Portfolio";
 
 const App = () => {
   const [loading, setLoading] = React.useState(false);
@@ -42,6 +43,7 @@ const App = () => {
           <Home />
           <About />
           <Skills />
+          <Portfolio/>
           <Contact />
           <Footer />
         </>

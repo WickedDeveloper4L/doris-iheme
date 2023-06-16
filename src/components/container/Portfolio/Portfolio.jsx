@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "./Portfolio.scss"
 import { workNavs } from "../../../Data";
 import { workImages } from '../../../Data';
-import {FiGithub, FiEye} from "react-icons/fi"
+import { FiEye} from "react-icons/fi"
 import { motion } from 'framer-motion';
 
 const Portfolio = () => {
@@ -75,15 +75,9 @@ const Portfolio = () => {
                 className='hoverLayer'
               >
                   
-                <motion.a href='#'
-                whileInView={{scale: [0,1]}}
-                 whileHover={{scale: [1, 1.1]}}
-                 transition={{duration: 0.3}}
-                >
-                  <FiGithub />
-                </motion.a>
+                
                   
-                <motion.a href='#'
+                <motion.a target='_blank'  href={work.link}
                 whileInView={{scale: [0,1]}}
                  whileHover={{scale: [1, 1.1]}}
                  transition={{duration: 0.3}}
