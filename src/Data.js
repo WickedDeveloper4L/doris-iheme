@@ -1,5 +1,6 @@
 import { FaPhoneAlt, FaUser, FaMapMarkerAlt, FaPaperPlane,  FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp, FaInstagramSquare, FaFacebookSquare, FaFacebookMessenger } from "react-icons/fa";
 import work1 from "./assets/work1.png";
+import {SiAdobephotoshop} from 'react-icons/si'
 import work2 from "./assets/work2.png";
 import work3 from "./assets/work3.png";
 import work4 from "./assets/work4.png";
@@ -9,9 +10,8 @@ import work6 from "./assets/work6.png";
 export const navLinks = ["home", "about", "skills", "contact"]
 
 export const socialIcons = [
-  <a title='Follow me on Instagram' href="https://www.instagram.com/kleinedev/" target="_blank" rel="noreferrer"><FaInstagram /></a>,
-  <a title='Connect with me on LinkedIn' href="https://www.linkedin.com/in/kleine-ahia-235463248/" target="_blank" rel="noreferrer"><FaLinkedin /></a>,
-  <a title='Follow me on Twitter' href="https://twitter.com/kleinedev" target="_blank" rel="noreferrer"><FaTwitter/></a>,
+  <a title='Follow me on Instagram' href="https://www.instagram.com/dheey_dheey_/" target="_blank" rel="noreferrer"><FaInstagram /></a>,
+  <a title='Follow me on Twitter' href="https://twitter.com/doris71195502" target="_blank" rel="noreferrer"><FaTwitter/></a>,
   <a title="Let's discuss on whatsapp" href="https://wa.me/2348157474347?text=Hello___" target="_blank" rel="noreferrer"><FaWhatsapp/></a>
 ]
 
@@ -36,7 +36,7 @@ export const bios = [
   }
 ]
 
-export const icons = [ <FaInstagramSquare/>, <FaTwitter/>, <FaLinkedin/>, <FaFacebookSquare/>, <FaWhatsapp/>, <FaFacebookMessenger/>]
+export const icons = [ <FaInstagramSquare/>, <FaTwitter/>, <FaLinkedin/>, <FaFacebookSquare/>, <FaWhatsapp/>, <FaFacebookMessenger/>, <SiAdobephotoshop/>]
 
 export const experiences = [
   {

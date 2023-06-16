@@ -1,27 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Contact.scss";
 import { contacts } from '../../../Data';
 import { socialIcons } from '../../../Data';
 import { motion } from 'framer-motion';
-import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const [inputs, setInputs] = useState({
+    email: '',
+    name: '',
+    message: '',
+    phoneNumber: ''
+  })
+  const {email, name, message, phoneNumber } = inputs;
+  const handlChange = (event) => {
+    const { name, value } = event.target;
 
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_24396yc', 'template_2a4h8rb', form.current, '356UkPy_EJedwTy_r')
-    .then((result) => {
-      console.log(result.text);
-  }, (error) => {
-      console.log(error.text);
-  });
-    e.target.reset()
+    setInputs({
+      ...inputs,
+      [name]: value,
+    });
   };
-
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+  };
   return (
     <div className="container" id="contact">
       <motion.div
@@ -71,23 +72,28 @@ const Contact = () => {
         
         >
           <h3>Get In Touch</h3>
-          <form ref={form} onSubmit={sendEmail}>
+          <form onSubmit={handleSubmit}>
           <div className="row">
-            <input type="text" placeholder='Fullname' name="name"/>
+            <input type="text" placeholder='Fullname' name="name" value={name} required onChange={handlChange}/>
           </div>
           <div className="row">
-            <input name="phone"  type="text" placeholder='Phone' />
-            <input type="email" name="email" placeholder='Email' required/>
+            <input name="phoneNumber"  type="text" placeholder='Phone' value={phoneNumber} required onChange={handlChange} />
+            <input type="email"
+            placeholder='Email'
+            name="email"
+            value={email}
+            onChange={handlChange}
+            required/>
           </div>
           <div className="row">
-            <textarea name="message" placeholder='message' required></textarea>
+            <textarea name="message" placeholder='message' value={message} onChange={handlChange} required></textarea>
           </div>
           <motion.div
             whileHover={{ scale: 1.1 }}
             transition={{duration: 0.3}}
             className="btn"
           >
-            <button type="submit" value="Send">Send</button>
+            <button type="submit" value="Send"><a href={`mailto:dorisiheme14@gmail.com?cc=dorisiheme@gmail.com&subject=Hello%20Let%20Work&body=My%20Name%20is%20${name}%20lets%20connect%20call%20me%20${phoneNumber}!`} target="_top">Send</a></button>
           </motion.div>
           </form>
         </motion.div>
